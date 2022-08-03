@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            height: 700px;
+            /* initializing container as felx box */
+            display: flex;
+
+            /* properties for flex CONTAINER */
+            /* flex-direction:row; */
+
+            /* default value of flexbox is row */
+
+            /* 
+           flex-direction:column;
+           flex-direction:row-reverse;
+              -> reverse row position se fill hona start hoga or elements position bhi reverse hongi.
+           flex-direction:column-reverse;
+           */
+
+            /* flex-wrap:wrap;
+            */
+
+            /* wraps content
+              flex-wrap:wrap reverse;
+              warapping is done reversly.
+           */
+
+            /* flex-flow:row wrap; */
+
+            /* 
+           direction or wrap ek sath likh sakte ho.
+           short hand hai ye.
+*/
+            justify-content: center;
+
+            /* for horizontal alignment purpose */
+
+            /*
+    -> justify-content:space-between;
+    -> justify-content:space-evenly;
+    -> justify-content:space-around;
+           */
+
+            align-items: center;
+
+
+            /* for vertical alignment purpose */
+            /* 
+        -> align-items:flex-end;  container ke bottom me jaega
+        -> align-items:stretch;  
+        -> align-items:flex-start; container ke upar me jaega 
+        */
+
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border: 2px solid black;
+            margin: 15px 10px;
+            padding: 3px;
+        }
+
+        #item1 {
+            /* properties for flex ITEM*/
+            /* order:2; */
+            /* higher the order later it shows up in the container */
+
+            /* flex-grow:3; */
+            /* higher the fex-grow the faster it grows */
+
+            /* flex-shrink:3; */
+            /* higher the fex-shrink the faster it shrinks */
+            color: red;
+
+        }
+
+        #item2 {
+            /* order:33; */
+
+            /* flex-basis:330px; */
+            /* this is width or height based on these conditions */
+            /* when flex-direction is set to row then flex-basis will controll width */
+            /* when flex-direction is set to column then flex-basis will controll height */
+            color: red;
+
+        }
+
+        #item3 {
+            /* order:30;   */
+            /* end me vo element jaega jiska order bada hoga */
+
+
+            /* align-self: flex-start;
+           align-self:center; */
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is a flexbox tutorial</h1>
+    <div class="container">
+        <div class="item" id="item1">First box</div>
+        <div class="item" id="item2">Second box</div>
+        <div class="item" id="item3">Third box</div>
+        <!-- <div class="item" id="item4">Fourth box</div>
+        <div class="item" id="item5">Fifth block</div>
+        <div class="item" id="item6">Sixth block</div> -->
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    -> flexbox= flexible box;
+    -> better way to align elements in a container.
+    -> 1-D layout method for laying out items in rows and columns .
+ -->

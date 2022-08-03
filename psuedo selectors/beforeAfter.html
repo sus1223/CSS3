@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after psuedo selectors</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+
+        }
+
+        header::before {
+            content: "";
+            background: url("alex-dukhanov-MW_gSoWAIS8-unsplash.jpg") no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            margin: 3px 75px;
+            text-align: center;
+            justify-content: center;
+            /* border:1px solid white; */
+            padding: 10px;
+        }
+
+        section::before {
+            content: " ";
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        .navigation {
+            font-size: 20px;
+            padding: 0px 10px;
+            display: flex;
+        }
+
+        .navbar {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 10px 0px 15px 15px;
+        }
+
+        .navbar div {
+            width: 80vw;
+            /* border:2px solid red; */
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #sid {
+            width: 35px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 25px 30px;
+        }
+
+        #sid:active {
+            width: 30px;
+            height: 25px;
+            margin: 28px 35px;
+
+        }
+
+        #sid:hover {
+            filter: drop-shadow(8px 8px 10px rgb(171, 171, 231));
+            transition: 0.1s;
+        }
+
+        #navit {
+            text-decoration: none;
+            color: white;
+        }
+
+        #navit:hover {
+            filter: drop-shadow(8px 8px 10px rgb(171, 171, 231));
+            transition: 0.2s;
+
+        }
+
+        #navit:focus {
+            color: rgb(90, 90, 235);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"><a href="#" id="navit">Home</a></li>
+                <li class="item"><a href="#" id="navit">About</a></li>
+                <li class="item"><a href="#" id="navit">Services</a></li>
+                <li class="item"><a href="#" id="navit">Contact</a> </li>
+            </ul>
+            <div>
+                <a href="https://youtu.be/GfBxzK2DzIE" target="_blank"><img src="PicsArt_03-08-11.14.00.jpg"
+                        id="sid"></a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <h3>Welcome to coding world</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae aliquid ut quo blanditiis odio tenetur facere
+            dicta labore possimus eligendi. Officia laboriosam beatae odio aperiam commodi id. Nam tenetur laudantium
+            iste porro error quas? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam laborum sapiente
+            corporis dolor quod? Doloremque iste facere accusantium sunt quisquam laboriosam explicabo sapiente placeat
+            culpa ipsum inventore, commodi delectus! Blanditiis laborum assumenda ab dolore?Lorem ipsum dolor sit amet.
+        </p>
+
+    </section>
+    <hr>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float & clear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'poppins', sans-serif;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            border-radius: 13px;
+            margin: auto;
+            /* makes elements centered in page*/
+            background-color: rgb(189, 176, 189);
+        }
+
+        .item {
+            border: 3px solid purple;
+            margin: 12px 3px;
+            padding: 12px;
+            background-color: rgb(201, 145, 201);
+        }
+
+        #fruit {
+            float: left;
+            width: 50%;
+            /* float ke sath width likhni pdegi */
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        #stationary {
+            clear: both;
+            /* koi bhi float left ya right element merko overlap na kare.
+          
+          clear:left;   clear:right;*/
+        }
+
+        p,
+        h3,
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Grocery</h1>
+        <div id="fruit" class="item">
+            <h3>Vegetable</h3>
+            <p id="fruitPara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia vitae dignissimos cupiditate,
+                non dicta molestias obcaecati at velit! Asperiores omnis enim est ut veniam inventore pariatur. Dolores,
+                quas ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab necessitatibus nam fuga ullam
+                illo pariatur dolores ut reprehenderit nisi! Laboriosam natus hic quam eveniet impedit ipsam quis
+                beatae, mollitia libero, consequatur assumenda! Itaque, assumenda.
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerPara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia vitae dignissimos cupiditate,
+                non dicta molestias obcaecati at velit! Asperiores omnis enim est ut veniam inventore pariatur. Dolores,
+                quas ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam culpa ipsa dolore,
+                aspernatur autem non pariatur accusantium repellendus soluta ab, rem commodi inventore aut delectus
+                cumque dolores voluptatem porro eaque odio magni sapiente.
+            </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationaryPara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia vitae dignissimos cupiditate,
+                non dicta molestias obcaecati at velit! Asperiores omnis enim est ut veniam inventore pariatur. Dolores,
+                quas.
+            </p>
+        </div>
+        <div id="glass" class="item">
+            <h3>Glass</h3>
+            <p id="glassPara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia vitae dignissimos cupiditate,
+                non dicta molestias obcaecati at velit! Asperiores omnis enim est ut veniam inventore pariatur. Dolores,
+                quas.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility and z-index</title>
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+
+        #box1 {
+            background-color: green;
+            position: relative;
+            top: 39px;
+            z-index: 1;
+            /* green will overlap red(box1>box2) */
+        }
+
+        #box2 {
+            background-color: red;
+            position: relative;
+            top: -10px;
+            z-index: 0;
+            /* 
+            -> z-index will work only for position relative absolute fixed or sticky.
+            -> jiska z-index jyada hoga vo dusre element to overlap krega.
+            -> The z-index property specifies the stack order of an element.
+            -> An element with greater stack order is always in front of an element with a lower stack order.
+
+             */
+        }
+
+        #box3 {
+            background-color: blue;
+            visibility: hidden;
+            /* hides element and gives gap, reserves place. */
+
+            /* 
+            -> display:none; 
+            this hides and doesnt leave a gap.
+            */
+        }
+
+        #box4 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive design and size units</title>
+    <style>
+        html {
+            font-size: 25px;
+        }
+
+        .container {
+            width: 100vw;
+            /* puri width lele viewport ki */
+
+            height: 100vh;
+            /* puri height lele viewport ki */
+            font-size: 10px;
+            border: 1px solid black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #first {
+            /* font-size:3em;
+             */
+            /* parent size ko 3 se multiply krdo (here parent is .container and its font size is 10px so heading will become 10*3=30px;) */
+
+            /* padding:3em; */
+
+            /* font-size ko 3 se multiply krdo( font size is 30px so 30*3= 90px, padding from all directions become 90px) */
+            color: red;
+        }
+
+        #second {
+            /* font-size:3rem; */
+
+            /* html root size ko 3 se multiply krdo (here root is html{ } and its font size is 25px so heading will become 25*3=75px;) */
+
+            /* padding:3rem; */
+
+            /* html root size ko 3 se multiply krdo (here root is html{ } and its font size is 25px so padding will become 25*3=75px;) */
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">this is 1st heading</h1>
+        <h1 id="second">this is 2nd heading</h1>
+        <h1 id="third">this is 3rd heading</h1>
+    </div>
+</body>
+
+</html>

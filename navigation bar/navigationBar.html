@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Navigation Bar</title>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
+        .navbar {
+            background-color: black;
+            border-radius: 10px;
+        }
+
+        .navbar ul {
+            overflow: hidden;
+            /* The CSS overflow property controls what happens to content that is too big to fit into an area.
+            
+            overflow:scroll; overflow:auto; adds a scroll bar for extra content.
+
+            overflow:hidden;
+            chops of content which is going out of parent element
+
+            try overflow in div.
+            */
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 0px;
+        }
+
+        .navbar li a {
+            padding: 17px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            color: rgb(119, 156, 190);
+            transition: 0.5s;
+        }
+
+        .navbar input {
+            float: right;
+            margin: 10px 15px 10px 2px;
+            border-radius: 13px;
+            padding: 1px 6px;
+        }
+
+        .navbar input:hover {
+            background-color: azure;
+        }
+
+        .navbar button {
+            float: right;
+            margin: 12px 3px 10px 0px;
+            border: none;
+            border-radius: 10px;
+            padding: 2px 6px;
+        }
+
+        .navbar button:hover {
+            background-color: rgb(193, 205, 216);
+        }
+
+        .navbar button:active {
+            background-color: rgb(134, 161, 187);
+        }
+
+        .editorial {
+            text-align: center;
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/3b3f60fe71.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact Us</a></li>
+                <input type="text" placeholder="search here..." name="Search">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="editorial">
+        <h3>Editorial</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel obcaecati aliquam nesciunt similique accusamus,
+            ullam eaque eos ducimus aliquid ex quaerat non magnam quo amet dolorum, quis omnis impedit dolores natus.
+            Laborum, ratione. Excepturi et laboriosam rem voluptates quasi quisquam impedit illo sunt aut adipisci,
+            atque consequuntur deleniti, harum, praesentium a! Tempore quaerat facilis numquam molestiae earum nesciunt
+            unde quibusdam velit doloremque nemo, iure, sequi, nobis eos a debitis adipisci.</p>
+        <p>Veniam quo quos molestiae consequatur possimus! Quas ullam ipsum aperiam adipisci iusto beatae molestias
+            molestiae similique vel facere quia, commodi vitae incidunt debitis iure tenetur temporibus accusamus
+            consectetur sed nihil sit necessitatibus nostrum qui fuga. Quia velit fugiat ipsam, excepturi tempora
+            molestiae necessitatibus quas distinctio quae inventore doloremque quam! Quasi dolor unde molestias,
+            deserunt consequatur ipsa illo iste nam vero explicabo error ex adipisci eos vel itaque fuga, optio quidem!
+        </p>
+        <p>Necessitatibus repudiandae exercitationem laudantium nesciunt sapiente perspiciatis ex tempore blanditiis
+            eaque obcaecati ullam nisi consequatur asperiores, dolorum odit sint accusamus. Aliquam provident eius
+            laborum dolorum doloremque? Voluptates, nulla? Excepturi harum ullam error libero nemo vel in sit ducimus
+            assumenda. Repellendus et dolores sit eius vel animi harum incidunt ipsa veniam? Unde molestiae dolorem,
+            tempora ipsa ut consectetur adipisci vitae necessitatibus, cum similique vel eveniet perspiciatis
+            accusantium ipsam quo inventore. Voluptas!</p>
+        <p>Quam quo inventore esse quos eligendi aliquam ab ad velit ducimus! Totam officiis non modi accusantium. Atque
+            possimus, ipsa, at magnam ipsam, laudantium incidunt laboriosam quibusdam illum praesentium recusandae
+            officiis dicta odit sit delectus reiciendis aperiam? Voluptatem eius eveniet ab enim. Dolores nulla
+            molestias, enim obcaecati officia, sint eius officiis labore adipisci aliquam laudantium iure consectetur.
+            Debitis culpa libero quas. Quia est voluptate ea numquam unde voluptatem rerum sequi voluptates!</p>
+        <p>Tempore, tempora. Ducimus reiciendis odit quo ab nemo similique iusto neque quidem corporis quas quasi
+            repudiandae saepe, voluptatem doloribus, magnam iste officia aliquid recusandae velit beatae non adipisci
+            sint? Voluptatem quod maxime culpa consequatur, magni suscipit odit sed molestias quasi nesciunt illo,
+            cupiditate quo eius sint. Necessitatibus sit tenetur eum aspernatur architecto, non maiores ipsa aliquam
+            mollitia sunt obcaecati illum quo sed consectetur voluptatum eligendi iure ex minus itaque quas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sunt maxime minus cumque nisi sapiente
+            tempora nulla quibusdam dolor deleniti. Accusamus a sed assumenda consequatur consequuntur, et harum
+            pariatur ipsum.</p>
+        <p>Asperiores deleniti repellendus earum esse omnis nesciunt numquam praesentium sit, distinctio facere ipsa.
+            Cum, nisi explicabo doloribus, pariatur alias nemo excepturi cumque laudantium saepe beatae unde nam
+            blanditiis dolore praesentium.</p>
+        <p>Natus dolore aspernatur eligendi totam dolorum quae ea sapiente commodi vitae reprehenderit laboriosam eius
+            necessitatibus quo, assumenda expedita doloremque cupiditate blanditiis rem nisi ab ullam est saepe
+            temporibus. Nihil, reiciendis.</p>
+        <p>A, eveniet ad maxime totam voluptates amet aut minima unde magni rem voluptate expedita alias quis, harum
+            molestias quidem nostrum impedit tempore, voluptas dolores id dolore repellendus consequuntur. Ut,
+            cupiditate.</p>
+        <p>Facere eius iusto asperiores, nihil esse laborum architecto obcaecati nisi accusamus quae, eligendi sapiente
+            pariatur perspiciatis alias corporis a quaerat explicabo deserunt illo temporibus illum dolorum laudantium
+            natus. Dignissimos, earum.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layouts of grids</title>
+    <style>
+        .container {
+            display: grid;
+            row-gap: 0.5em;
+            column-gap: 0.5em;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer'
+            ;
+        }
+
+        .box {
+            border: 2px solid red;
+            padding: 16px;
+            text-align: center;
+            background-color: rgb(221, 193, 193);
+            ;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        #footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="box">
+            Home About Contact
+        </div>
+        <div id="section" class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi laudantium odit adipisci possimus eum,
+            ducimus dolorum repudiandae nemo natus magni et illo saepe quis inventore. Modi deserunt est ipsam non sint
+            dolorum libero voluptas.
+        </div>
+        <div id="aside" class="box">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores tempore quia.
+        </div>
+        <footer id="footer" class="box">
+            bye!
+        </footer>
+        <!-- <div class="box">item-1</div>
+        <div class="box">item-2</div>
+        <div class="box">item-3</div>
+        <div class="box">item-4</div>
+        <div class="box">item-5</div>
+        <div class="box">item-6</div>
+        <div class="box">item-7</div>
+        <div class="box">item-8</div> -->
+    </div>
+</body>
+
+</html>

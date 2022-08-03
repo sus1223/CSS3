@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /* position: static( default ),  relative, absolute, fixed , sticky */
+        .parentContainer {
+            border: 1px solid black;
+            background-color: rgb(226, 186, 172);
+            height: 3434px;
+        }
+
+        .box {
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+
+        #box3 {
+            /* relative to its normal position 
+           with relative you can use top bottom left right to move an element and will leave a gap at its normal position */
+            position: relative;
+            top: 34px;
+            left: 5px;
+        }
+
+        #box4 {
+            /* absolute
+           for absolute to work it should always be inside a parent container. and now you can move this absolute element w.r.t. the parent container. */
+            position: absolute;
+            left: 340px;
+            top: 340px;
+        }
+
+        #box1 {
+            position: fixed;
+            right: 56px;
+            top: 34px;
+            /* pos'n relative to browser window
+           this height gap will remain fixed for this element if u scroll down */
+        }
+
+        #box2 {
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parentContainer">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display properties and other</title>
+
+    <style>
+        header {
+            border: 2px solid red;
+            margin: auto;
+            width: 1200px;
+        }
+
+        img {
+            display: block;
+            /* 
+            to make inline elements block elements so that they occupy all the width and then margin width center magic boom */
+            width: 100px;
+            height: 100px;
+            border-radius: 45%;
+            margin: 14px auto 13px auto;
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .box {
+            border: 4px solid black;
+            background-color: gray;
+            padding: 23px;
+            margin: 6px;
+            display: inline-block;
+            width: 32%;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: auto;
+            width: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+
+        <img src="/images/IMG_20210617_203741_904.jpg" alt="no image">
+
+        <h1>Sidharth Juyal hero</h1>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h3 class="heading">
+                Heading
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque cum, dolorem magnam ea doloremque error
+                corporis iure cupiditate. Cumque impedit quasi esse beatae nemo, dolorem eum excepturi, sint ipsa dolore
+                laboriosam, autem rerum facilis incidunt iste repellat ipsam? Accusantium, a.
+            </p>
+        </div>
+
+        <div class="box">
+            <h3 class="heading">
+                Heading
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque cum, dolorem magnam ea doloremque error
+                corporis iure cupiditate. Cumque impedit quasi esse beatae nemo, dolorem eum excepturi, sint ipsa dolore
+                laboriosam, autem rerum facilis incidunt iste repellat ipsam? Accusantium, a.
+            </p>
+        </div>
+        <div class="box">
+            <h3 class="heading">
+                Heading
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque cum, dolorem magnam ea doloremque error
+                corporis iure cupiditate. Cumque impedit quasi esse beatae nemo, dolorem eum excepturi, sint ipsa dolore
+                laboriosam, autem rerum facilis incidunt iste repellat ipsam? Accusantium, a.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

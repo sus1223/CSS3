@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height, width borders and background</title>
+
+    <style>
+        #firstPara {
+            background-color: coral;
+            height: 100px;
+            width: 100px;
+            border: 2px solid blue;
+            border-radius: 10px;
+        }
+
+        #secondPara {
+            background-color: rgb(19, 185, 19);
+            height: 100px;
+            width: 100px;
+            border-top: 2px solid blue;
+            border-bottom: 2px solid red;
+            border-left: 2px solid hotpink;
+            border-right: 2px solid yellow;
+
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 15px;
+            /* see this */
+        }
+
+        #thirdPara {
+            height: 500px;
+            width: 500px;
+            border: 2px solid black;
+            background-image: url('/images/IMG_20210617_203741_904.jpg');
+
+            background-repeat: no-repeat;
+            /* so the image doesnt repeat 
+              repeat-x and repeat-y to repeat on respective axis.
+            */
+            background-position: bottom left;
+            /* 
+            left top
+            left center
+            left bottom
+            right top
+            right center
+            right bottom
+            center top
+            center center
+            center bottom etc.
+            
+            first parameter can be left,right, center.
+            second parameter can be top,bottom, center.
+            If you only specify one keyword, the other value will be "center"
+            */
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>this is heading</h3>
+    <p id="firstPara">this is a paragraph</p>
+    <p id="secondPara">this is a paragraph</p>
+
+    <p id="thirdPara">this is a paragraph</p>
+
+</body>
+
+</html>

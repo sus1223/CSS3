@@ -1,0 +1,31 @@
+div {
+
+    height: 40px;
+    color: green;
+    background: #000 !important;
+    /* see above -_- */
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*  CSS
+-> gives style to raw html files.
+-> CSS= cascading styles sheet.
+-> makes website responsive.
+-> hTML gives structure CSS gives design.
+
+SYNTAX
+-> selector{ property: value; }
+for ex:
+
+header,p.intro {
+    background-color:red;
+    border-radius: 3px;
+}
+
+types of CSS
+-> inline CSS: added to elements directly using style attribute.
+-> internal CSS: is kept inside head tags in <style> tags.
+-> external CSS: CSS is kept separately unside .css style sheet.
+
+*/

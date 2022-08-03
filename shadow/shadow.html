@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            /* border:2px solid red; */
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: rgb(221, 176, 176);
+
+            /* box-shadow: 2px 4px black; */
+            /*  box-shadow: x, y, color; 
+            can also be -ve x and -ve y*/
+
+
+            /* box-shadow: 2px 4px 10px black; */
+            /* box-shadow: x, y, blur_radius, color; */
+
+            /* box-shadow: 2px 4px 10px 2px rgba(22, 119, 22, 0.5); */
+            /* box-shadow: x, y, blur_radius, spread_radius, color; */
+
+
+            /* box-shadow:inset 7px 5px 10px green; */
+            /* inside box shadow */
+
+            box-shadow: 3px 7px green, 5px 9px red;
+            /* multiple shadow */
+        }
+
+        .card h1 {
+            text-shadow: 3px 4px 10px grey;
+        }
+
+        /* text para,eters are same as box shadows try them */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h1>This is a C++ course</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint aspernatur labore repudiandae facere totam
+                est corrupti magni! Alias magni minus quo voluptate, porro quam odio rem animi vitae laudantium cum
+                nulla repellat maxime fugit?</p>
+        </div>
+        <div class="card" id="card2">
+            <h1>This is a java course</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint aspernatur labore repudiandae facere totam
+                est corrupti magni! Alias magni minus quo voluptate, porro quam odio rem animi vitae laudantium cum
+                nulla repellat maxime fugit?</p>
+        </div>
+        <div class="card" id="card3">
+            <h1>card 3</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint aspernatur labore repudiandae facere totam
+                est corrupti magni! Alias magni minus quo voluptate, porro quam odio rem animi vitae laudantium cum
+                nulla repellat maxime fugit?</p>
+        </div>
+    </div>
+</body>
+
+</html>

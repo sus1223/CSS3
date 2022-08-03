@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid row</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-rows: 1fr 1fr 4fr;
+            grid-auto-rows: 2fr;
+            /* baki bchi hui rows ki width determiBne kr deta hai */
+
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+        }
+
+        .item {
+            background-color: rgb(219, 166, 166);
+            margin: 3px;
+            border: 2px solid red;
+            padding: 15px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item-7</div>
+        <div class="item">this is item-8</div>
+        <div class="item">this is item-9</div>
+        <div class="item">this is item-10</div>
+    </div>
+</body>
+
+</html>

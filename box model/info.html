@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model, margins and padding</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* see box-sizing */
+        }
+
+        .container {
+            width: 500px;
+            height: 100px;
+            background-color: rgb(166, 218, 166);
+            border-right: 3px solid rgb(17, 216, 17);
+            border-bottom: 3px solid rgb(17, 216, 17);
+            border-bottom-right-radius: 20px;
+            color: black;
+
+            /* PADDING
+             space btw box line and content
+             */
+            /* padding:9px; */
+            padding: 14px 11px 14px 12px;
+            /* 
+             same for padding and margin
+             top right bottom left */
+            /* 
+             padding-top:9px;
+             padding-bottom:9px;
+             padding-left:9px;
+             padding-right:9px;
+             */
+
+            /* MARGIN */
+            margin: 34px;
+            /* 
+             also, u can
+             margin: top/bottom left/right;
+             */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem atque unde sunt amet? Perferendis nam
+            autem vitae enim rem, impedit quidem quod illo facere, maiores a rerum dolor. Voluptatum, quisquam?
+        </p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem atque unde sunt amet? Perferendis
+            nam autem vitae enim rem, impedit quidem quod illo facere, maiores a rerum dolor. Voluptatum, quisquam?
+        </p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem atque unde sunt amet? Perferendis nam
+            autem vitae enim rem, impedit quidem quod illo facere, maiores a rerum dolor. Voluptatum, quisquam?</p>
+    </div>
+
+</body>
+
+</html>

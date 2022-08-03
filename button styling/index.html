@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo selectors and more designing</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            background-color: rgb(203, 243, 203);
+            padding: 34px;
+            margin: 34px;
+            width: 666px;
+        }
+
+        a {
+            text-decoration: none;
+            /* taki link ki underline hat jaae */
+            color: black;
+        }
+
+        /* visited psuedo selector(links u have visited) */
+        a:visited {
+            color: rgb(180, 21, 21);
+        }
+
+        a:active {
+            color: black;
+        }
+
+        .btn {
+            background-color: plum;
+            padding: 6px;
+            border: none;
+            /* to disappear border */
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+        }
+
+        /* psuedo selector hover(mouse hovers) */
+        .btn:hover {
+            color: rgb(105, 13, 13);
+            background-color: rgb(228, 108, 228);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>this is my heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam eaque assumenda earum placeat minima? Quis,
+            placeat saepe nisi eum tenetur ad illum fugiat optio quisquam ipsam iusto molestias quae possimus dolore
+            praesentium quas quos.</p>
+        <a href="https://www.facebook.com/" class="btn" target="_blank">Read more</a>
+        <button class="btn">contact us</button>
+    </div>
+</body>
+
+</html>
